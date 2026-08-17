@@ -91,6 +91,20 @@ nav {
           }
         }
       }
+      /* ambassadors  */
+      #ambassadors {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 43.5px;
+        width: 200px;
+        padding: 28px 24px;
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+
     }
 
     .menu-item::after {
@@ -116,7 +130,11 @@ nav {
       .drop-down {
         display: flex;
         justify-content: space-between;
-        background-color: white;
+        background-color: var(--col1);
+      }
+      #ambassadors {
+        display: block;
+        background-color: var(--col1);
       }
     }
 
