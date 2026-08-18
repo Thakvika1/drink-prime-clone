@@ -24,7 +24,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 50px;
-  /* background-color: var(--col1); */
   min-height: 76px;
   border-bottom: 0.1px solid var(--border-color);
   transition: 0.5s;
@@ -33,7 +32,7 @@ nav {
     list-style: none;
     color: var(--col2);
     display: flex;
-    align-items: flex-end ;
+    align-items: flex-start ;
     gap: 20px;
     padding: 0;
     margin: 0;
@@ -47,8 +46,8 @@ nav {
       font-size: 14px;
       cursor: pointer;
       color: var(--col1);
-      height: 36px;
-      margin-bottom: 7px;
+      height: 100%;
+      top: 32px;
 
       /* drop down */
       .drop-down {
@@ -56,13 +55,12 @@ nav {
         padding: 40px 50px;
         width: 100vw;
         position: absolute;
-        z-index: 1001;
         top: 43.5px;
         left: -50px;
         display: none;
         cursor: default;
 
-
+        /* content  */
         .content {
           display: flex;
           flex-direction: column;
@@ -81,6 +79,7 @@ nav {
             cursor: pointer;
           }
         }
+        /* poster  */
         .poster {
           display: flex;
           gap: 40px;
@@ -104,27 +103,21 @@ nav {
         box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
         display: none;
       }
-
     }
 
+    /* create fake element  */
     .menu-item::after {
       content: "";
       position: absolute;
       left: 0;
-      bottom: -8px;
+      top: 42.5px;
       width: 0;
       height: 2px;
       background-color: black;
       transition: width 0.3s ease;
     }
-
     .menu-item:hover::after {
       width: 100%;
-      .drop-down {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-      }
     }
     .menu-item:hover {
       .drop-down {
@@ -137,7 +130,6 @@ nav {
         background-color: var(--col1);
       }
     }
-
   }
 
   #logo {
@@ -173,7 +165,6 @@ nav {
       .selected {
         border: 1px solid var(--col1) ;
       }
-
     }
 
     .icon {
@@ -189,7 +180,6 @@ nav {
       letter-spacing: 1px;
       padding: 15px 27px;
       color: var(--col1);
-      /* background-color: var(--col2); */
 
       min-height: 76px;
       min-width: 160px;
@@ -264,6 +254,7 @@ nav:hover {
     #protein-redefined {
       background-image: url("img/slide/protein_redefined.webp");
     }
+    /* banner  */
     .banner {
       background-size: cover;
       background-position: center;
@@ -405,7 +396,6 @@ nav:hover {
       flex-direction: column;
       align-items: center;
 
-
       img {
         width: 195.99px;
         height: 195.99px;
@@ -530,7 +520,6 @@ nav:hover {
       display: flex;
       flex-direction: column;
       align-items: center;
-
 
       img {
         width: 326px;
