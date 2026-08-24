@@ -390,15 +390,17 @@ nav:hover {
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     margin: -85px 19px 0px;
+    width: 100%;
 
     .item {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
 
       img {
-        width: 195.99px;
-        height: 195.99px;
+        width: 100%;
+        height: auto;
         cursor: pointer;
       }
 
@@ -411,10 +413,10 @@ nav:hover {
         font-family: var(--font);
 
         h3 {
-          font-size: 19px;
+          font-size: 17px;
           text-transform: uppercase;
           font-weight: 500;
-          line-height: 1.1;
+          line-height: 1.2;
           letter-spacing: 2px;
         }
 
@@ -491,9 +493,136 @@ nav:hover {
   }
 }
 
+/* shake  */
+.shake {
+  padding: 40px 0px;
+  margin: 0 28px;
+  align-items: center;
+  text-align: center;
+
+  #title-shake {
+    font-size: 150px;
+    font-family: var(--font);
+    color: var(--col2);
+    letter-spacing: 30px;
+    font-weight: 400;
+    line-height: 0.85;
+    margin: 0px;
+    margin-bottom: 70px;
+  }
+
+  .item-container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    margin: -85px 19px 0px;
+    width: 100%;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+
+      .product-info {
+        display: flex;
+        flex: 1;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font);
+
+        h3 {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 500;
+          line-height: 1.1;
+          letter-spacing: 2px;
+        }
+
+        span {
+          width: 135px;
+          min-height: 38px;
+          padding: 2px 14px 1px;
+          cursor: pointer;
+          border: 1px solid var(--col2);
+          font-size: 13px;
+          font-weight: 500;
+          transition: 0.3s;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        span:hover {
+          background-color: var(--col2);
+          color: var(--col1);
+        }
+      }
+    }
+  }
+}
+
+/* shake promotion  */
+.shake-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+
+  img {
+    min-width: 475px;
+    height: 475px;
+  }
+
+  .shake-promotion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 475px;
+      max-height: 350px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: var(--col1);
+      background-color: var(--col2);
+      font-family: var(--font);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+      padding: 15px 27px;
+      text-align: center;
+      max-width: 199px;
+      max-height: 52px;
+      transition: 0.3s;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a:hover {
+      background-color: var(--col1);
+      color: var(--col2);
+      border: 1px solid var(--col2);
+    }
+  }
+}
+
 /* rapid rehydration  */
 .rapid-rehydration {
-  padding: 40px 0px 40px;
+  padding: 75px 0px 60px;
   align-items: center;
   text-align: center;
 
@@ -522,8 +651,8 @@ nav:hover {
       align-items: center;
 
       img {
-        width: 326px;
-        height: 326px;
+        max-width: 326px;
+        max-height: 326px; 
         cursor: pointer;
       }
 
