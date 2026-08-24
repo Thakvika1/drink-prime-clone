@@ -444,7 +444,7 @@ nav:hover {
 }
 
 /* hydration-promotion  */
-.hydration-promotion {
+.hydration-feature {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,7 +456,7 @@ nav:hover {
     height: 475px;
   }
 
-  .feature-promotion {
+  .hydration-promotion {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
